@@ -1,0 +1,38 @@
+
+<html>
+	<head>
+		<!-- <link rel="stylesheet" href="style_project.css"> -->
+		<title>Shapes & Colors</title>
+
+
+	</head>
+	<body>
+
+
+{#    <img src='../static/images/colors_quiz.jpg'>#}
+	<div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%;background-image:url("{{ url_for('static',filename='images/home.jpg') }}"); background-size: 100%'>
+
+          <audio controls source src="{{ url_for('static',filename='audio/a1.mp3') }}" type="audio/mpeg" autoplay="true" hidden="true" loop="true">
+{#          <source src="horse.mp3" type="audio/mpeg">#}
+
+            </audio>
+{#        <embed src="{{ url_for('static',filename='a1.mp3') }}"  loop="true" autostart="true" hidden="true" />#}
+		<div>
+		<a href="quiz"><img src="{{ url_for('static',filename='images/study.jpg') }}" style="height:150px; margin-top: 135px; margin-left: 400px "></a>
+		</div>
+
+		<div>
+			<a href="learnColor"><img src="{{ url_for('static',filename='images/colors.gif') }}" style="margin-right: 293px;margin-top: 87px; float: right; display: inline;"></a>
+		</div>
+
+		<div>
+			<a href="learnShape"><img src="{{ url_for('static',filename='images/shapes.gif') }}" style="height:230px;display: inline;margin-left: 100px;float: left; margin-top: 60px;margin-left: 400px"></a>
+		</div>
+
+
+
+	</div>
+
+
+	</body>
+</html>

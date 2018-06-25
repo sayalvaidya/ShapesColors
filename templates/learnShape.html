@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Learn Shapes</title>
+</head>
+<body>
+    	<div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%;background-image:url("../static/images/learn_shape.jpg"); background-size: 100%'>
+
+            <form method='post' action="{{ url_for('upload_shape') }}" enctype='multipart/form-data'>
+                <div class="form-group" style="float: left;margin-left: 450px; margin-top: 200px;display: inline">
+                 <label for="inputImage" style="font-family: chalkduster; font-size: large">Choose Image here:</label>
+                   <input type="file" class="form-control" id="inputImage" name="inputImage">
+                  </div>
+                <div style="float: right; margin-right: 550px; margin-top: 20px; display: inline">
+                    <button type="submit" class="btn btn-success"style="background-color: dodgerblue;height: 40px; width: 120px">Submit</button>
+
+                </div>
+             </form>
+
+{#            <div style="margin-left: 200px; margin-top: 300px">#}
+{#                 {% if img is defined %}#}
+{#                 <br><br>#}
+{#                 <figure>#}
+{#                    <img src="{{url_for('static', filename='images/'+img)}}" width="400" height="300"/>#}
+{#                     <figcaption>Fig: Input Image.</figcaption>#}
+{#                  </figure>#}
+{#             {% endif %}#}
+{##}
+{#            </div>#}
+
+             <audio controls source src="{{ url_for('static',filename='audio/a2.mp3') }}" type="audio/mpeg" autoplay="true" hidden="true" loop="true">
+
+
+            </audio>
+        </div>
+</body>
+</html>
